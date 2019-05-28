@@ -30,9 +30,6 @@ ifeq ($(TARGET_DEVICE),land)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
-
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := wifi_symlinks
